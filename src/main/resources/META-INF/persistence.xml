@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit name="persistence-data">
+        <class>com.giasuonline.entity.RoleEntity</class>
+        <class>com.giasuonline.entity.UserEntity</class>
+        <class>com.giasuonline.entity.TeacherEntity</class>
+        <class>com.giasuonline.entity.StudentEntity</class>
+        <class>com.giasuonline.entity.SubjectEntity</class>
+        <class>com.giasuonline.entity.WebxuEntity</class>
+        <class>com.giasuonline.entity.EvaluateEntity</class>
+    </persistence-unit>
+</persistence>
+

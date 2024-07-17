@@ -1,0 +1,107 @@
+
+/* Rating */
+.rating {
+	background: white;
+	border-radius: 25px;
+	padding: 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	width: 90%;
+	margin: 30px auto 0;
+}
+
+.rating input {
+	display: none;
+}
+
+.rating label {
+	font-size: 0;
+}
+
+.rating label.stars::before, .rating label.hearts::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.rating label.stars::before {
+	background: url(/template/web/image/star-solid.svg) no-repeat center center;
+	background-size: 20px;
+}
+
+.rating label.hearts::before {
+	background: url(/template/web/image/heart-solid.svg) no-repeat center center;
+	background-size: 20px;
+}
+
+/* Hover effect */
+.rating.effect input:checked + label ~ label.stars::before, .rating.effect:hover input:hover + label ~ label.stars::before {
+	background: url(/template/web/image/star-regular.svg) no-repeat center center;
+	background-size: 20px;
+	opacity: .3;
+}
+
+.rating.effect:hover input + label ~ label.stars::before {
+	background: url(/template/web/image/star-solid.svg) no-repeat center center;
+	background-size: 20px;
+}
+
+.rating.effect input:checked + label ~ label.hearts::before, .rating.effect:hover input:hover + label ~ label.hearts::before {
+	background: url(/template/web/image/heart-regular.svg) no-repeat center center;
+	background-size: 20px;
+	opacity: .3;
+}
+
+.rating.effect:hover input + label ~ label.hearts::before {
+	background: url(/template/web/image/heart-solid.svg) no-repeat center center;
+	background-size: 20px;
+}
+
+#menu{
+    text-align: center;
+}
+		
+#menu-line{
+	display: block;
+	background-color: black;
+}
+		
+ul{
+		z-index: 100;
+}
+		
+ul li {
+		display: inline-block;
+		margin-right: 30px;
+}
+		
+ul li a{
+	display: block;
+	font-size: 20px;
+    text-decoration: none;
+	color: black;	
+}
+
+.btnclick{
+	font-size: 20px;
+	color:black;
+}
+
+.btnclick:hover{
+	cursor:pointer;
+	text-decoration:none
+	color:grey;
+}
+
+.active{
+	color:white;
+}
+
+.active:hover{
+	cursor:pointer;
+	color:white;
+	text-decoration:none
+}

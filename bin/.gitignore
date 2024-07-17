@@ -1,0 +1,7 @@
+/target/
+.settings
+.classpath
+/.project
+/README.md
+/pom.xml
+/src/
